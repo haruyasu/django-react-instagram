@@ -158,7 +158,8 @@ if not DEBUG:
     SECRET_KEY = env('SECRET_KEY')
     # ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
     ALLOWED_HOSTS = ['*']
-    CORS_ORIGIN_WHITELIST = ['https://myinsta-3c14b.web.app']
+    # CORS_ORIGIN_WHITELIST = ['https://myinsta-3c14b.web.app']
+    CORS_ORIGIN_ALLOW_ALL = True
 
     STATIC_ROOT = '/usr/share/nginx/html/static'
     MEDIA_ROOT = '/usr/share/nginx/html/media'
